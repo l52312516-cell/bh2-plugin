@@ -1,0 +1,14 @@
+# 复制为 plugins/bh2-plugin/config.yaml 后按需调整。
+recordBase: https://api-takumi-record.mihoyo.com/game_record/app/bh2/api
+roleBase: https://api-takumi.mihoyo.com
+gameBiz: bh2_cn
+defaultServer: prod_gf_cn
+requestTimeoutMs: 15000
+cacheTtlSeconds: 300
+catalogUpdate:
+  repository: l52312516-cell/Honkai-Academy-2-Illustrated-Guide
+  branch: main
+  assetName: Honkai-Academy-2-Illustrated-Guide.zip
+endpoints:
+  loginDays: /index
+  showcase: /characters
