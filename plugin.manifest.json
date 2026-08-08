@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "name": "bh2-plugin",
-  "version": "0.3.1",
-  "generatedAt": "2026-08-08T03:54:39.394Z",
+  "version": "0.3.3",
+  "generatedAt": "2026-08-08T08:01:27.396Z",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "f67abb8e29adcb35b2de983a9ecac6b95d19e9d396c5d8cea684646468bb8391"
+      "sha256": "e9e247eecbd9fcb40857b9802676a422e3427d86fdac880465f7c3dfd7a0b434"
     },
     {
       "path": "LICENSE",
@@ -14,11 +14,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "9be56f91d6079651c727ea506f75384a89d48c4abd8ce1bd12036bc26cbf4d93"
+      "sha256": "8a4eef5ccc66b6b07523faae325788b91da308b2bf69c63634e2ec9481f13e66"
     },
     {
       "path": "apps/main.js",
-      "sha256": "ce88aff38e00092ad6ed5c27721c59d181a9875f1c52e3243cb3f53e0a841fb2"
+      "sha256": "af7585d966b233a184155f3295c0c0e5f64eb228fb7cbf7104e63ae14c044d88"
     },
     {
       "path": "config.example.yaml",
@@ -34,7 +34,7 @@
     },
     {
       "path": "lib/cardImage.js",
-      "sha256": "d993c2473e8ba5e1f5a9f4ec962860c98c90fd66cd20bf58fa70a7958982d4cb"
+      "sha256": "e972418be449e27b390da2c4d4327e1804adb9a110ea1a5ed080927bdc34817e"
     },
     {
       "path": "lib/catalog.js",
@@ -42,11 +42,11 @@
     },
     {
       "path": "lib/catalogUpdater.js",
-      "sha256": "240cd882c0086b3328447efaf16d9225de1e3fef54ed74380b44e4684aa32d7f"
+      "sha256": "4edce2a1edde2448be88c2d75dfcfe426d46053c02dd46f0b3ed474dcd831095"
     },
     {
       "path": "lib/commands.js",
-      "sha256": "a2e7b488380fdbb1e00b111cc79925b296d9f325501a8e121a93f7fc8b50a701"
+      "sha256": "cec242655a9306258ab3b6d675843a032fd6e30d729911fded9843453e4280eb"
     },
     {
       "path": "lib/pluginInfo.js",
@@ -54,7 +54,7 @@
     },
     {
       "path": "lib/pluginUpdater.js",
-      "sha256": "51af77970eb38831268b4c5ca9659a87394b07b923277d6c6553500eb2c3d6a1"
+      "sha256": "09ee522c57af6d1b4bf7eede7bbf5283b2560f70882c6b1bf28ed4bc180da190"
     },
     {
       "path": "lib/store.js",
@@ -62,7 +62,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "2ca702f7a7ccbc69e56dba9acf7a442b11cb519ad61979d104c7037257307cf8"
+      "sha256": "d38a156a3fd006ead39cf23a1073ef5db727833d7c54e85d90efbd5d063e0f14"
     },
     {
       "path": "resources/html/card.html",

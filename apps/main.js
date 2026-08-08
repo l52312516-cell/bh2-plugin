@@ -77,11 +77,13 @@ export class Bh2Plugin extends BasePlugin {
       case "loginDays": return this.showLoginDays(command.uid)
       case "showcase": return this.showShowcase(command.uid)
       case "catalogUpdate": return this.updateCatalog()
+      case "catalogForceUpdate": return this.updateCatalog(true)
       case "catalog": return this.showCatalog(command.keyword, command.type, command.page)
       case "detail": return this.showDetail(command.query)
       case "status": return this.showStatus()
       case "changelog": return this.showChangelog()
       case "pluginUpdate": return this.updatePlugin()
+      case "pluginForceUpdate": return this.updatePlugin(true)
       default: return false
     }
   }
@@ -164,12 +166,14 @@ export class Bh2Plugin extends BasePlugin {
     })
   }
 
-  async updateCatalog() {
+  async updateCatalog(force = false) {
     if (!isMaster(this.e)) return this.e.reply("仅 Bot 主人可以更新图鉴。")
-    await this.e.reply("正在从 GitHub 下载并校验崩坏学园2图鉴，请稍候……")
+    await this.e.reply(force
+      ? "正在强制覆盖更新崩坏学园2图鉴，现有图鉴图片将被替换，请稍候……"
+      : "正在从 GitHub 下载并校验崩坏学园2图鉴，请稍候……")
     try {
-      const result = await updateCatalogFromGithub()
-      return this.e.reply(`图鉴更新完成：版本 ${result.version}，共 ${result.entries} 条、${result.images} 张图片。`)
+      const result = await updateCatalogFromGithub({ force })
+      return this.e.reply(`${force ? "图鉴强制更新完成" : "图鉴更新完成"}：版本 ${result.version}，共 ${result.entries} 条、${result.images} 张图片。`)
     } catch (error) {
       globalThis.logger?.error?.(`[bh2] 图鉴更新失败: ${error.stack || error.message}`)
       return this.e.reply(`图鉴更新失败：${friendlyError(error)}`)
@@ -201,12 +205,14 @@ export class Bh2Plugin extends BasePlugin {
     return this.e.reply(changelogText())
   }
 
-  async updatePlugin() {
+  async updatePlugin(force = false) {
     if (!isMaster(this.e)) return this.e.reply("仅 Bot 主人可以更新插件。")
-    await this.e.reply("正在检查并更新 bh2-plugin，请稍候……")
+    await this.e.reply(force
+      ? "正在强制覆盖更新 bh2-plugin，现有程序文件将被替换，请稍候……"
+      : "正在检查并更新 bh2-plugin，请稍候……")
     try {
-      const result = await updatePluginFromGithub()
-      if (!result.updated) return this.e.reply(`bh2-plugin 已是最新版本（v${result.version}）。`)
+      const result = await updatePluginFromGithub({ force })
+      if (!result.updated) return this.e.reply(`bh2-plugin 已是最新版本（v${result.version}），无需覆盖。`)
       await this.e.reply(`bh2-plugin 已更新至 v${result.version}，即将重启云崽。`)
       setTimeout(async () => {
         const restarted = await restartYunzai(this.e)
