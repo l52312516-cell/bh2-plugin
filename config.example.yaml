@@ -15,4 +15,4 @@ pluginUpdate:
   assetName: bh2-plugin-server.zip
 endpoints:
   loginDays: /index
-  showcase: /characters
+  showcase: /index

@@ -17,6 +17,6 @@
   },
   "endpoints": {
     "loginDays": "/index",
-    "showcase": "/characters"
+    "showcase": "/index"
   }
 }

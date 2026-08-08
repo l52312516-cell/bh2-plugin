@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "name": "bh2-plugin",
-  "version": "0.3.0",
-  "generatedAt": "2026-08-08T03:21:55.493Z",
+  "version": "0.3.1",
+  "generatedAt": "2026-08-08T03:54:39.394Z",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "a560e9186c4b6e950f8ce5b98faa51c6fc4680f07d1f136915cef2815176ee8c"
+      "sha256": "f67abb8e29adcb35b2de983a9ecac6b95d19e9d396c5d8cea684646468bb8391"
     },
     {
       "path": "LICENSE",
@@ -14,15 +14,15 @@
     },
     {
       "path": "README.md",
-      "sha256": "843a44d0622db15ea08ab8aab64f5d99089c7ef4549fed3d62a352b246731590"
+      "sha256": "9be56f91d6079651c727ea506f75384a89d48c4abd8ce1bd12036bc26cbf4d93"
     },
     {
       "path": "apps/main.js",
-      "sha256": "d4d4f09cc2b7dc9fb6e45d6c1311564c511ae2337d8cd01ec6b16c839ec40148"
+      "sha256": "ce88aff38e00092ad6ed5c27721c59d181a9875f1c52e3243cb3f53e0a841fb2"
     },
     {
       "path": "config.example.yaml",
-      "sha256": "d3735ef7c9dfa194cb40fa96596dfe73f00e62349fe1d4355ddaa7fcb91b2b3b"
+      "sha256": "adc3365880b59b692baa519c0ba970124f5bd46707f0ba915316772ee080f312"
     },
     {
       "path": "index.js",
@@ -30,11 +30,11 @@
     },
     {
       "path": "lib/api.js",
-      "sha256": "eb7c06cf8b4a8d71984aca8f5b58cc1b783fb5dc41d174cdb53d0db6060ff01d"
+      "sha256": "14389b5e3eeab7479fc5800ec0e34626ee93c87814f5a20510aa0ec431df4d5c"
     },
     {
       "path": "lib/cardImage.js",
-      "sha256": "cae275f26a1455900b72c47dbd68cf6ad8d3d91007a17d12f13d18eca290897c"
+      "sha256": "d993c2473e8ba5e1f5a9f4ec962860c98c90fd66cd20bf58fa70a7958982d4cb"
     },
     {
       "path": "lib/catalog.js",
@@ -62,7 +62,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "96011d8ac2a70ab96b81fe08377807c770b54302672a7119374c43f4fb7530de"
+      "sha256": "2ca702f7a7ccbc69e56dba9acf7a442b11cb519ad61979d104c7037257307cf8"
     },
     {
       "path": "resources/html/card.html",

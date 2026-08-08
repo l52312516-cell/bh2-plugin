@@ -1,7 +1,7 @@
 {
   "name": "bh2-plugin",
-  "version": "0.3.0",
-  "description": "云崽崩坏学园2账号、展柜和本地图鉴插件",
+  "version": "0.3.1",
+  "description": "云崽崩坏学园2账号、战绩和本地图鉴插件",
   "type": "module",
   "main": "index.js",
   "license": "MIT",

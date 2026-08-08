@@ -57,7 +57,7 @@ export class Bh2Plugin extends BasePlugin {
   constructor() {
     super({
       name: "bh2-plugin",
-      dsc: "崩坏学园2账号、展柜和图鉴",
+      dsc: "崩坏学园2账号、战绩和图鉴",
       event: "message",
       priority: -1800,
       rule: [{ reg: COMMAND_REG, fnc: "dispatch" }],
