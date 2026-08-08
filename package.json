@@ -1,13 +1,14 @@
 {
   "name": "bh2-plugin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "云崽崩坏学园2账号、展柜和本地图鉴插件",
   "type": "module",
   "main": "index.js",
   "license": "MIT",
   "engines": { "node": ">=18.0.0" },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "package:server": "node scripts/package-release.mjs"
   },
   "optionalDependencies": {
     "sqlite3": "^5.1.7",

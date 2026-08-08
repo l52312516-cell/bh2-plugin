@@ -9,6 +9,10 @@ catalogUpdate:
   repository: l52312516-cell/Honkai-Academy-2-Illustrated-Guide
   branch: main
   assetName: Honkai-Academy-2-Illustrated-Guide.zip
+pluginUpdate:
+  repository: l52312516-cell/bh2-plugin
+  branch: main
+  assetName: bh2-plugin-server.zip
 endpoints:
   loginDays: /index
   showcase: /characters

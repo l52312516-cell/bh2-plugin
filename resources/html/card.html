@@ -20,9 +20,10 @@
     .section h2 { margin: 0 0 10px; font-size: 18px; color: #243b53; }
     .items { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
     .item { min-width: 0; padding: 8px; border: 1px solid #d9e2ec; border-radius: 6px; background: #fbfcfd; text-align: center; }
-    .item img { width: 120px; height: 120px; max-width: 100%; object-fit: cover; border-radius: 5px; background: #e9eef2; }
-    .item-name { margin-top: 5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .item-tag { color: #627d98; font-size: 12px; }
+    .item img, .placeholder { width: 120px; height: 120px; max-width: 100%; margin: auto; object-fit: cover; border-radius: 5px; background: #e9eef2; }
+    .placeholder { display: grid; place-items: center; color: #82939c; font-size: 12px; }
+    .item-name { margin-top: 5px; min-height: 42px; font-weight: 700; line-height: 1.45; overflow-wrap: anywhere; }
+    .item-tag { min-height: 34px; color: #627d98; font-size: 12px; line-height: 1.4; overflow-wrap: anywhere; }
     .links { margin-top: 14px; color: #486581; font-size: 12px; word-break: break-all; }
   </style>
 </head>
@@ -36,7 +37,7 @@
     {{each sections section}}
       <div class="section"><h2>{{section.title}}</h2><div class="items">
         {{each section.items item}}<div class="item">
-          {{if item.image}}<img src="{{item.image}}" alt="{{item.name}}">{{else if item.localImage}}<img src="{{pluResPath}}{{item.localImage}}" alt="{{item.name}}">{{/if}}
+          {{if item.image}}<img src="{{item.image}}" alt="{{item.name}}">{{else if item.localImage}}<img src="{{pluResPath}}{{item.localImage}}" alt="{{item.name}}">{{else}}<div class="placeholder">暂无图片</div>{{/if}}
           <div class="item-name">{{item.name}}</div><div class="item-tag">{{item.tag}}</div>
         </div>{{/each}}
       </div></div>
