@@ -1,0 +1,20 @@
+# bh2-plugin local/runtime files
+node_modules/
+config/config.json
+config/*.local.json
+
+data/
+resources/img/
+
+# temporary update/extract directories
+.catalog-download-*/
+.catalog-stage-*/
+.bh2-update-*/
+
+# generic local files
+*.log
+*.sqlite
+*.db
+*.db-*
+*.tmp
+*.bak
