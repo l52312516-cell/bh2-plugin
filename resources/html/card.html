@@ -25,6 +25,12 @@
     .item-name { margin-top: 5px; min-height: 42px; font-weight: 700; line-height: 1.45; overflow-wrap: anywhere; }
     .item-tag { min-height: 34px; color: #627d98; font-size: 12px; line-height: 1.4; overflow-wrap: anywhere; }
     .links { margin-top: 14px; color: #486581; font-size: 12px; word-break: break-all; }
+    .attributes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 18px; margin-top: 14px; }
+    .attribute { display: flex; gap: 8px; line-height: 1.55; }
+    .attribute b { flex: 0 0 100px; color: #486581; }
+    .skill { margin-top: 10px; padding: 10px; border-left: 3px solid #0f6cbd; background: #f5f7fa; line-height: 1.55; }
+    .skill-title { font-weight: 700; color: #243b53; }
+    .skill-text { margin-top: 3px; white-space: pre-wrap; overflow-wrap: anywhere; }
   </style>
 </head>
 <body>
@@ -34,6 +40,8 @@
   <div class="panel">
     {{if stats.length}}<div class="stats">{{each stats item}}<div class="stat"><strong>{{item.value}}</strong><span>{{item.label}}</span></div>{{/each}}</div>{{/if}}
     {{if fields.length}}<div class="fields">{{each fields item}}<div class="field"><b>{{item.label}}</b><span>{{item.value}}</span></div>{{/each}}</div>{{/if}}
+    {{if attributes && attributes.length}}<div class="section"><h2>核心属性</h2><div class="attributes">{{each attributes item}}<div class="attribute"><b>{{item.label}}</b><span>{{item.value}}</span></div>{{/each}}</div></div>{{/if}}
+    {{if skills && skills.length}}<div class="section"><h2>技能</h2>{{each skills item}}<div class="skill"><div class="skill-title">{{item.group}} · {{item.title}}{{if item.damageType}} · {{item.damageType}}{{/if}}</div>{{if item.description}}<div class="skill-text">{{item.description}}</div>{{/if}}{{if item.maxLevelDescription}}<div class="skill-text">满级：{{item.maxLevelDescription}}</div>{{/if}}</div>{{/each}}</div>{{/if}}
     {{each sections section}}
       <div class="section"><h2>{{section.title}}</h2><div class="items">
         {{each section.items item}}<div class="item">

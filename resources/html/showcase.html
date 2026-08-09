@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; width: 980px; padding: 24px; color: #1f2933; background: #edf2f5; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+    .header { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: #fff; border: 1px solid #d9e2ec; border-radius: 8px; }
+    .avatar, .avatar-placeholder { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; background: #d9e2ec; }
+    .avatar-placeholder { display: grid; place-items: center; color: #627d98; font-size: 12px; }
+    h1 { margin: 0; font-size: 27px; color: #243b53; }
+    .meta { margin-top: 8px; color: #627d98; font-size: 14px; line-height: 1.7; }
+    .notice { margin-top: 14px; padding: 10px 14px; background: #fff4e5; border-left: 4px solid #f0a202; color: #8a4b08; }
+    .panel { margin-top: 14px; padding: 16px; background: #fff; border: 1px solid #d9e2ec; border-radius: 8px; }
+    .section-title { margin: 0 0 12px; color: #243b53; font-size: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 9px; }
+    .item { min-width: 0; text-align: center; }
+    .item img, .placeholder { width: 90px; height: 90px; max-width: 100%; object-fit: cover; border-radius: 6px; background: #e9eef2; }
+    .placeholder { display: grid; place-items: center; color: #82939c; font-size: 11px; }
+    .name { margin-top: 4px; min-height: 34px; font-size: 12px; font-weight: 700; line-height: 1.4; overflow-wrap: anywhere; }
+    .tag { min-height: 16px; color: #627d98; font-size: 11px; overflow-wrap: anywhere; }
+    .attrs { margin-top: 3px; color: #486581; font-size: 10px; line-height: 1.3; }
+    .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+    .stat { padding: 9px 6px; text-align: center; background: #f5f7fa; border-radius: 6px; }
+    .stat strong { display: block; color: #0f6cbd; font-size: 19px; }
+    .stat span { color: #627d98; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    {{if profile.avatar}}<img class="avatar" src="{{profile.avatar}}" alt="avatar">{{else}}<div class="avatar-placeholder">暂无头像</div>{{/if}}
+    <div>
+      <h1>{{profile.nickname || "未知玩家"}}</h1>
+      <div class="meta">UID {{uid}} · {{if profile.level}}Lv.{{profile.level}}{{else}}等级未知{{/if}} · {{profile.guild || "未加入社团"}} · {{if profile.region}}{{profile.region}}{{else}}区服未知{{/if}} {{if profile.vip}} · VIP {{profile.vip}}{{/if}}</div>
+    </div>
+  </div>
+  {{if notice}}<div class="notice">{{notice}}</div>{{/if}}
+  {{each sections section}}
+    <div class="panel"><h2 class="section-title">{{section.title}}</h2><div class="grid">
+      {{each section.items item}}<div class="item">
+        {{if item.image}}<img src="{{item.image}}" alt="{{item.name}}">{{else if item.localImage}}<img src="{{pluResPath}}{{item.localImage}}" alt="{{item.name}}">{{else}}<div class="placeholder">暂无图片</div>{{/if}}
+        <div class="name">{{item.name}}</div><div class="tag">{{item.tag}}</div>
+        {{if item.attributes.length}}<div class="attrs">{{each item.attributes attr}}{{attr.label}} {{attr.value}}<br>{{/each}}</div>{{/if}}
+      </div>{{/each}}
+    </div></div>
+  {{/each}}
+  <div class="panel"><h2 class="section-title">公开统计</h2><div class="stats">
+    {{each stats item}}<div class="stat"><strong>{{item.value}}</strong><span>{{item.label}}</span></div>{{/each}}
+  </div></div>
+</body>
+</html>

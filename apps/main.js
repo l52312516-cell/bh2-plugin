@@ -17,6 +17,7 @@ import {
   helpText as renderHelpText,
   replyCard,
   replyHelp,
+  replyShowcase,
   showcaseCard,
   statusCard,
   textFallback,
@@ -160,9 +161,15 @@ export class Bh2Plugin extends BasePlugin {
   }
 
   async showShowcase(explicitUid = "") {
-    return this.withUid(explicitUid, async (uid, cookie) => {
+    return this.withUid(explicitUid, async (uid, cookie, roles) => {
       const raw = await recordRequest("showcase", uid, {}, cookie)
-      return replyCard(this.e, showcaseCard(normalizeShowcase(raw, uid), name => findEntry(name)))
+      const role = roles.find(item => String(item.game_uid) === String(uid)) || {}
+      const model = showcaseCard(
+        normalizeShowcase(raw, uid, role),
+        (name, id) => (id ? getAllEntries().find(entry => String(entry.uid || entry.gameId || entry.id) === String(id)) : null) || findEntry(name),
+        role,
+      )
+      return replyShowcase(this.e, model)
     })
   }
 
