@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "name": "bh2-plugin",
+  "version": "0.4.0",
+  "generatedAt": "2026-08-09T04:08:23.695Z",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "28ff0fa2f6319bd3482cb1058c87b25268abd6c9aea5fad547783f2148d61489"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "1bd4fe040580766231701dd3c2a5c71a27d62b40436f6da0be5ce9363edad3b0"
+    },
+    {
+      "path": "README.md",
+      "sha256": "080e2f1d462f8548a372e56c26dbd76c1ce30eccac5ac96d74f936903164d1c6"
+    },
+    {
+      "path": "apps/main.js",
+      "sha256": "a94f0f5a183ca1cad602cb5a3195ebd921c9aacf586f8139815a40a7b285b29e"
+    },
+    {
+      "path": "config.example.yaml",
+      "sha256": "adc3365880b59b692baa519c0ba970124f5bd46707f0ba915316772ee080f312"
+    },
+    {
+      "path": "index.js",
+      "sha256": "174c61f72c263c2f537eb8eea4babc25c8be144baf613deeb97ee3aec4bbdd80"
+    },
+    {
+      "path": "lib/api.js",
+      "sha256": "d8c15efc3375a75f851a115e10e04905c963aa771a0b891cb89b5e323c4ac481"
+    },
+    {
+      "path": "lib/cardImage.js",
+      "sha256": "84681474309400a0f159a39bffad1c4f11d6c4c9c2c1203c822014d4c0265b17"
+    },
+    {
+      "path": "lib/catalog.js",
+      "sha256": "337878c9679b3a63399c95364af988e135979244161606cca477e36c8b886896"
+    },
+    {
+      "path": "lib/catalogUpdater.js",
+      "sha256": "21dfa60cd461f3110c389a0f7cd47d7d8261815ba01c3da2bc414a8ef39205b4"
+    },
+    {
+      "path": "lib/commands.js",
+      "sha256": "cec242655a9306258ab3b6d675843a032fd6e30d729911fded9843453e4280eb"
+    },
+    {
+      "path": "lib/pluginInfo.js",
+      "sha256": "de8daf36a01414dd21346117994eb84da877eb3e3ceafd151e5c4cc912efaed0"
+    },
+    {
+      "path": "lib/pluginUpdater.js",
+      "sha256": "18417b14e22b3112ae39709b8cf3b1f64b82b4bb1fbf6b54bbd9d2273760bc54"
+    },
+    {
+      "path": "lib/store.js",
+      "sha256": "c2b7f482a74d681ad41bff387affda231e8833680fcf1bcc8ecd8fa8629fa880"
+    },
+    {
+      "path": "package.json",
+      "sha256": "04af5980e4c3363b283daa1c012f7b4197048184c1f4397aaf114ab0bf26184d"
+    },
+    {
+      "path": "resources/html/card.html",
+      "sha256": "e7fded69e90a281debd1d27dced07bfa4cf4c2f49c9c97c1219b7cfbabe7f9ce"
+    },
+    {
+      "path": "resources/html/help.html",
+      "sha256": "a3ebb747e90645e01cb7b088637b6604ceb655603e49a357bf5679e7f89a6e29"
+    },
+    {
+      "path": "resources/html/showcase.html",
+      "sha256": "2e080265e5a77fd210d587653480dcec1af73f0694602e61636d190bad0a4d5a"
+    }
+  ]
+}
