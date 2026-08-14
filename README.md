@@ -61,6 +61,8 @@ pnpm add sqlite3
 
 插件会校验 `manifest.json`、图鉴 SHA256、条目结构和图片路径，再替换 `data/catalog.json` 与 `resources/img/`。
 
+图鉴更新不依赖 GitHub API：优先下载最新 Release 中固定名称的 ZIP，失败后再尝试分支归档。镜像列表、连接超时和下载停滞超时可在 `config/config.json` 的 `catalogUpdate` 中调整；也可以在 `downloadUrls` 中填写自建 CDN 或对象存储的 HTTPS 直链。大文件使用临时文件流式下载，在同一轮镜像切换时支持断点续传。
+
 ## 插件更新
 
 Git 安装使用 `git pull --ff-only`；ZIP 安装优先下载主仓库最新 Release 中的 `bh2-plugin-server.zip`，没有 Release 时回退 `main` 分支。ZIP 更新只替换 `plugin.manifest.json` 中列出的程序文件，保留用户配置和本地图鉴。

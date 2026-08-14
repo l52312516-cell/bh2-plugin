@@ -45,6 +45,7 @@ function isMaster(e) {
 
 function friendlyError(error) {
   const message = String(error?.message || error || "未知错误")
+  if (error?.code === "BH2_CATALOG_DOWNLOAD_FAILED") return message
   if (/abort|timeout|timed out/i.test(`${error?.name || ""} ${message}`)) return "请求超时，请稍后重试。"
   if (/fetch failed|ENOTFOUND|ECONNRESET|ECONNREFUSED/i.test(message)) return "网络连接失败，请稍后重试。"
   return message

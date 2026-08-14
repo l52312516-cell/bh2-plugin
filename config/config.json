@@ -8,7 +8,17 @@
   "catalogUpdate": {
     "repository": "l52312516-cell/Honkai-Academy-2-Illustrated-Guide",
     "branch": "main",
-    "assetName": "Honkai-Academy-2-Illustrated-Guide.zip"
+    "assetName": "Honkai-Academy-2-Illustrated-Guide.zip",
+    "downloadUrls": [],
+    "mirrors": [
+      "https://ghproxy.net/",
+      "https://ghfast.top/",
+      "https://gh-proxy.com/",
+      "https://github.moeyy.xyz/",
+      "https://mirror.ghproxy.com/"
+    ],
+    "connectTimeoutMs": 15000,
+    "idleTimeoutMs": 120000
   },
   "pluginUpdate": {
     "repository": "l52312516-cell/bh2-plugin",

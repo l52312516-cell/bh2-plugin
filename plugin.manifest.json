@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "name": "bh2-plugin",
-  "version": "0.4.0",
-  "generatedAt": "2026-08-09T03:23:34.870Z",
+  "version": "0.4.1",
+  "generatedAt": "2026-08-14T03:13:09.312Z",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "28ff0fa2f6319bd3482cb1058c87b25268abd6c9aea5fad547783f2148d61489"
+      "sha256": "5aa9f1de9b85f18be18ec964eb22dcfd246648aa82a46721856dbe27abce5ac2"
     },
     {
       "path": "LICENSE",
@@ -14,15 +14,15 @@
     },
     {
       "path": "README.md",
-      "sha256": "080e2f1d462f8548a372e56c26dbd76c1ce30eccac5ac96d74f936903164d1c6"
+      "sha256": "0208e9e3df5c4538460f30afdc1e18d9984a802c717bced6cf68808492290dbd"
     },
     {
       "path": "apps/main.js",
-      "sha256": "a94f0f5a183ca1cad602cb5a3195ebd921c9aacf586f8139815a40a7b285b29e"
+      "sha256": "3794bb179a87931ee2bc71d8cd42f02f77b88ea7b79955349eee0ba619d67376"
     },
     {
       "path": "config.example.yaml",
-      "sha256": "adc3365880b59b692baa519c0ba970124f5bd46707f0ba915316772ee080f312"
+      "sha256": "f84866b7bc0636e4d55dc2e5e9cb1f9bf88e6af853d4e0f03d57f704e8726fe1"
     },
     {
       "path": "index.js",
@@ -42,7 +42,7 @@
     },
     {
       "path": "lib/catalogUpdater.js",
-      "sha256": "4edce2a1edde2448be88c2d75dfcfe426d46053c02dd46f0b3ed474dcd831095"
+      "sha256": "6e8cc998a5e0ec0bf2058a1407dbbbbbd54f18256020797cdd3261c68b02159f"
     },
     {
       "path": "lib/commands.js",
@@ -54,7 +54,7 @@
     },
     {
       "path": "lib/pluginUpdater.js",
-      "sha256": "09ee522c57af6d1b4bf7eede7bbf5283b2560f70882c6b1bf28ed4bc180da190"
+      "sha256": "18417b14e22b3112ae39709b8cf3b1f64b82b4bb1fbf6b54bbd9d2273760bc54"
     },
     {
       "path": "lib/store.js",
@@ -62,7 +62,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "04af5980e4c3363b283daa1c012f7b4197048184c1f4397aaf114ab0bf26184d"
+      "sha256": "7141422ecebb8bfb563b0bd4384cef5848b035b352793123e7ed5864697a87b7"
     },
     {
       "path": "resources/html/card.html",
