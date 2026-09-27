@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "name": "bh2-plugin",
-  "version": "0.6.0",
-  "generatedAt": "2026-09-27T03:08:41.789Z",
+  "version": "0.6.1",
+  "generatedAt": "2026-09-27T04:33:04.102Z",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "b0ffa5b223bcf7d63a8ad858d4d44c65f6713b23741df71aa8044cffdaebd0df"
+      "sha256": "c1d758d83c8cd25a9562ce493c879566ce11ceecd67b4f542bddf95e84a787c2"
     },
     {
       "path": "LICENSE",
@@ -14,7 +14,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "8b2e6a6c6c6f333b152209e94caadcb4e5c1d25181e04ba6c25297d8aa76bf57"
+      "sha256": "08f23dc2a8088a9d877fe4bc763a0014e7313d99f8f0223275caaca89ab33308"
     },
     {
       "path": "SOURCE-NOTICE.md",
@@ -70,27 +70,27 @@
     },
     {
       "path": "package.json",
-      "sha256": "7271d9ff68caaf6f7268d814644268bc7f67b1d0b7029ba031bbfd7cad620adb"
+      "sha256": "7eb53df99fc2fa6a05a75b94cb712dd06f4b08d8cc2a894bd68f870e4c1d05ee"
     },
     {
       "path": "resources/html/account.html",
-      "sha256": "58548b5b7ae54491162d29c2ec732ae9c51ba0a3549c6cd446d51d4894d67f89"
+      "sha256": "6b2664a133c1d47d35a873f2fbe1f228d989fc7835e0bbfca3fa64512efb6168"
     },
     {
       "path": "resources/html/card.html",
-      "sha256": "6f837f6a2919b42c5854addc8bd8b14a12969af6dc1ed9ac92a4c336a51bdc23"
+      "sha256": "bdddbaef683095f263b235e31c941bceee4b3d56aab91894a416e2a9c426103c"
     },
     {
       "path": "resources/html/catalog-detail.html",
-      "sha256": "bc7a52aaa8f6e61642570dff070d08deeec31842b26eae55c5e57d9c2e80c853"
+      "sha256": "04a5a9253ab161508f056f80f1eae679020669b221f587fbe2d5e672383b599c"
     },
     {
       "path": "resources/html/catalog-list.html",
-      "sha256": "ef5287bcf62f1b671b08c7a530b3d5d5b5cf76935a025133192584904697872a"
+      "sha256": "09544621cc7a439104cf8327ba869f1d2dc6b03e4f4ebd407674ba4e2b4db94c"
     },
     {
       "path": "resources/html/help.html",
-      "sha256": "48c9609135e29bca07dea3556375c0cabcedf59816abc6ad9ab558cf7a93d18d"
+      "sha256": "5f8e77c43023ab1eea19548481eb9159a34934f2c70b510cfd9c431fdc83d535"
     },
     {
       "path": "resources/html/partials/fields.html",
@@ -118,11 +118,11 @@
     },
     {
       "path": "resources/html/showcase.html",
-      "sha256": "ba64fbafd27884a949d1c58eb429f2ba16f23106316861fa4926d751bc5f0ad1"
+      "sha256": "42df7f80504340850cd0170624f9fbf79c031245eaf6ee935240f5a6c9b66da1"
     },
     {
       "path": "resources/html/status.html",
-      "sha256": "1b13bb9805a5e29721586e4952dd9c06a6c3f54fb2a4079f3d9cbdfaac911862"
+      "sha256": "c7d0c022e420511ab60d527e4e59807aec81aa59e9dc30d5b32c1044c2c1b6c0"
     },
     {
       "path": "resources/ui/assets.json",
