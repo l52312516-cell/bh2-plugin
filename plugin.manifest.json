@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "name": "bh2-plugin",
-  "version": "0.4.1",
-  "generatedAt": "2026-08-14T03:13:09.312Z",
+  "version": "0.5.0",
+  "generatedAt": "2026-09-27T00:56:27.866Z",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "5aa9f1de9b85f18be18ec964eb22dcfd246648aa82a46721856dbe27abce5ac2"
+      "sha256": "e405eba45efe4067f3b037a7920e110c4037cccf6aec42e0ba2376e3c34d2b84"
     },
     {
       "path": "LICENSE",
@@ -14,11 +14,15 @@
     },
     {
       "path": "README.md",
-      "sha256": "0208e9e3df5c4538460f30afdc1e18d9984a802c717bced6cf68808492290dbd"
+      "sha256": "826e3f831983632664e7f1f7985a0dc095b199624a4e2934293ae3dc854a6f72"
+    },
+    {
+      "path": "SOURCE-NOTICE.md",
+      "sha256": "ef0df9c8dd489819b3bb9ae894c574271979bb3ec173c0774c40ae9daa370db7"
     },
     {
       "path": "apps/main.js",
-      "sha256": "3794bb179a87931ee2bc71d8cd42f02f77b88ea7b79955349eee0ba619d67376"
+      "sha256": "68cdba2cc0c614130f73f2c63d77e9721c5fd1f1cc1c1aa7b88188d04ab88281"
     },
     {
       "path": "config.example.yaml",
@@ -34,11 +38,11 @@
     },
     {
       "path": "lib/cardImage.js",
-      "sha256": "84681474309400a0f159a39bffad1c4f11d6c4c9c2c1203c822014d4c0265b17"
+      "sha256": "254522b690632f285b0be77264db7c14872fd8842ce7e296e6d394c85f73a1b8"
     },
     {
       "path": "lib/catalog.js",
-      "sha256": "337878c9679b3a63399c95364af988e135979244161606cca477e36c8b886896"
+      "sha256": "333763c7baba4764294ffaf3965fc08c111e3ab503734b584336425366f19021"
     },
     {
       "path": "lib/catalogUpdater.js",
@@ -61,20 +65,144 @@
       "sha256": "c2b7f482a74d681ad41bff387affda231e8833680fcf1bcc8ecd8fa8629fa880"
     },
     {
+      "path": "lib/ui.js",
+      "sha256": "544c85e15a564981873ea36afe9899ac036410dbc24a6c38a28c8d52124c52f8"
+    },
+    {
       "path": "package.json",
-      "sha256": "7141422ecebb8bfb563b0bd4384cef5848b035b352793123e7ed5864697a87b7"
+      "sha256": "84917e77538382a0ff61982c7e4b552a8d237d4cd9f1ff17fbe6b2abd2d66b89"
+    },
+    {
+      "path": "resources/html/account.html",
+      "sha256": "58548b5b7ae54491162d29c2ec732ae9c51ba0a3549c6cd446d51d4894d67f89"
     },
     {
       "path": "resources/html/card.html",
-      "sha256": "e7fded69e90a281debd1d27dced07bfa4cf4c2f49c9c97c1219b7cfbabe7f9ce"
+      "sha256": "6f837f6a2919b42c5854addc8bd8b14a12969af6dc1ed9ac92a4c336a51bdc23"
+    },
+    {
+      "path": "resources/html/catalog-detail.html",
+      "sha256": "bc7a52aaa8f6e61642570dff070d08deeec31842b26eae55c5e57d9c2e80c853"
+    },
+    {
+      "path": "resources/html/catalog-list.html",
+      "sha256": "ef5287bcf62f1b671b08c7a530b3d5d5b5cf76935a025133192584904697872a"
     },
     {
       "path": "resources/html/help.html",
-      "sha256": "a3ebb747e90645e01cb7b088637b6604ceb655603e49a357bf5679e7f89a6e29"
+      "sha256": "48c9609135e29bca07dea3556375c0cabcedf59816abc6ad9ab558cf7a93d18d"
+    },
+    {
+      "path": "resources/html/partials/fields.html",
+      "sha256": "0721397d1c54f50f0271736b4928a19bcc8bd0711310b44c773cb9b948f8016a"
+    },
+    {
+      "path": "resources/html/partials/foot.html",
+      "sha256": "e9fbd533bba5a57ba7034ebfc4946ca6f4715a424720338aa9b8fd5d045e21cf"
+    },
+    {
+      "path": "resources/html/partials/head.html",
+      "sha256": "04f4459e48af2fc256ae9b06215f18ca2a5e6fd941c0d6fbecfc998c5e969dbe"
+    },
+    {
+      "path": "resources/html/partials/items.html",
+      "sha256": "299dccabb306a41e603b404093240093d0cfd04f49512131868965e2e3b05d74"
+    },
+    {
+      "path": "resources/html/partials/profile.html",
+      "sha256": "69efd710d40f57fcab2aec164136f9d0112267699f998ff07575a315d3bbd387"
+    },
+    {
+      "path": "resources/html/partials/stats.html",
+      "sha256": "dabe8aa1ef3b6e2df3816e4ab834cd6fabf4d206c7c1960755be6063d833258e"
     },
     {
       "path": "resources/html/showcase.html",
-      "sha256": "2e080265e5a77fd210d587653480dcec1af73f0694602e61636d190bad0a4d5a"
+      "sha256": "ba64fbafd27884a949d1c58eb429f2ba16f23106316861fa4926d751bc5f0ad1"
+    },
+    {
+      "path": "resources/html/status.html",
+      "sha256": "1b13bb9805a5e29721586e4952dd9c06a6c3f54fb2a4079f3d9cbdfaac911862"
+    },
+    {
+      "path": "resources/ui/assets.json",
+      "sha256": "8f5ce9055c868c88f6ca8bbaccf0fd5f581d28b0b4ceeed6e09d8a9bce463ae6"
+    },
+    {
+      "path": "resources/ui/backgrounds/catalog.jpg",
+      "sha256": "41521f53a16ef2d88bd0ce157197882bc2b53d176e57c4c1c3e9e5b707dad0a2"
+    },
+    {
+      "path": "resources/ui/backgrounds/help.jpg",
+      "sha256": "3f5d303a39d27d29633142d92b6b623485f2c23adefe6c5dc225ada79beebcf2"
+    },
+    {
+      "path": "resources/ui/backgrounds/profile.jpg",
+      "sha256": "048f18d0e3b7d1ac4488f8afc36900c32ecb1c1ed36da21becc40fbc1127771c"
+    },
+    {
+      "path": "resources/ui/backgrounds/status.jpg",
+      "sha256": "4c23b5ba59e7ee6882f1492bea3efeeb64ed8d3c71ade1b9826a393cb5627d48"
+    },
+    {
+      "path": "resources/ui/fonts/NotoSansSC.woff2",
+      "sha256": "90b72d69dfc414994ea73d354ff8bc1ddf9c2df7edbd5429be61f39c8656688e"
+    },
+    {
+      "path": "resources/ui/fonts/OFL.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "path": "resources/ui/icons/badge.png",
+      "sha256": "1b2222fac54db263220abf21efe0ab28990f61e8d36f2d9f1211d85cfee8f087"
+    },
+    {
+      "path": "resources/ui/icons/book.svg",
+      "sha256": "04371223d3130edf142f97e44bb632b547a98dac4168524364edebb39f7156a3"
+    },
+    {
+      "path": "resources/ui/icons/calendar.svg",
+      "sha256": "ddc194ea0348ee571ae0c04bca2c5cda0b394cf17a5cbd25df2f72f0ccacae30"
+    },
+    {
+      "path": "resources/ui/icons/equipment.png",
+      "sha256": "e711e8e6114945a0633dec44101d1a84ded23c82e2f347c1c2404dd09aec0e24"
+    },
+    {
+      "path": "resources/ui/icons/image.svg",
+      "sha256": "e17283ea6c87a099f8e12691cab34dcfa4d9e0b793b9fa1759d916536cdf3584"
+    },
+    {
+      "path": "resources/ui/icons/info.svg",
+      "sha256": "81d7da1a7071370c78217220a22cb052e21224c5651484117b3ce8d1288a2de2"
+    },
+    {
+      "path": "resources/ui/icons/link.svg",
+      "sha256": "e05e305f872d1ceeec2ec61c7b4301f9dadd018d4abedc620bee7ad20e32ad1b"
+    },
+    {
+      "path": "resources/ui/icons/pet.png",
+      "sha256": "f40c2a203cad38134266a98f811ea0849b17de43b7a4c8dd47acf6e8a16704f3"
+    },
+    {
+      "path": "resources/ui/icons/settings.svg",
+      "sha256": "dc94d2a3fb74fc7021bd7df206b07b8441d631a5ff7e7c7829e62623949c7946"
+    },
+    {
+      "path": "resources/ui/icons/sync.svg",
+      "sha256": "5b9e41924ee81b1b94f671137814f720723842f554efd37283b9a9307c928178"
+    },
+    {
+      "path": "resources/ui/icons/user.svg",
+      "sha256": "ee33a88009a4ea2577bc87e9b9efd8754a58bf5197cf7ef6d3a9e932c0521857"
+    },
+    {
+      "path": "resources/ui/ready.js",
+      "sha256": "f4012b53140e2ae921553ef211d07a43171a31ab5d7b30dbe8a54a59c6dfa6ad"
+    },
+    {
+      "path": "resources/ui/theme.css",
+      "sha256": "82bf2d020d65d901c2042960dad1a6845cb3659fac19e13fd7214dc5f61b56ea"
     }
   ]
 }

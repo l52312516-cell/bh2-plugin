@@ -1,0 +1,83 @@
+{
+  "snapshotDate": "2026-09-26",
+  "assets": [
+    {
+      "path": "backgrounds/help.jpg",
+      "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/download/cg/origin/2024-03-05.jpg",
+      "credit": "miHoYo / 崩坏学园2 官网",
+      "purpose": "decorative background",
+      "width": 1400,
+      "height": 788,
+      "bytes": 303587,
+      "sha256": "3f5d303a39d27d29633142d92b6b623485f2c23adefe6c5dc225ada79beebcf2"
+    },
+    {
+      "path": "backgrounds/status.jpg",
+      "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/download/cg/origin/2024-02-19.jpg",
+      "credit": "miHoYo / 崩坏学园2 官网",
+      "purpose": "decorative background",
+      "width": 1400,
+      "height": 788,
+      "bytes": 294416,
+      "sha256": "4c23b5ba59e7ee6882f1492bea3efeeb64ed8d3c71ade1b9826a393cb5627d48"
+    },
+    {
+      "path": "backgrounds/profile.jpg",
+      "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/download/cg/origin/2024-02-02.jpg",
+      "credit": "miHoYo / 崩坏学园2 官网",
+      "purpose": "decorative background",
+      "width": 1400,
+      "height": 788,
+      "bytes": 294525,
+      "sha256": "048f18d0e3b7d1ac4488f8afc36900c32ecb1c1ed36da21becc40fbc1127771c"
+    },
+    {
+      "path": "backgrounds/catalog.jpg",
+      "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/download/cg/origin/2024-01-29.jpg",
+      "credit": "miHoYo / 崩坏学园2 官网",
+      "purpose": "decorative background",
+      "width": 1400,
+      "height": 788,
+      "bytes": 292249,
+      "sha256": "41521f53a16ef2d88bd0ce157197882bc2b53d176e57c4c1c3e9e5b707dad0a2"
+    },
+    {
+      "path": "icons/equipment.png",
+      "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/index/equip/1/119.png",
+      "credit": "miHoYo / 崩坏学园2 官网",
+      "purpose": "category icon",
+      "width": 52,
+      "height": 144,
+      "bytes": 17192,
+      "sha256": "e711e8e6114945a0633dec44101d1a84ded23c82e2f347c1c2404dd09aec0e24"
+    },
+    {
+      "path": "icons/badge.png",
+      "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/index/equip/1/121.png",
+      "credit": "miHoYo / 崩坏学园2 官网",
+      "purpose": "category icon",
+      "width": 52,
+      "height": 144,
+      "bytes": 16183,
+      "sha256": "1b2222fac54db263220abf21efe0ab28990f61e8d36f2d9f1211d85cfee8f087"
+    },
+    {
+      "path": "icons/pet.png",
+      "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/index/enemy/1/6.png",
+      "credit": "miHoYo / 崩坏学园2 官网",
+      "purpose": "category icon",
+      "width": 51,
+      "height": 144,
+      "bytes": 14099,
+      "sha256": "f40c2a203cad38134266a98f811ea0849b17de43b7a4c8dd47acf6e8a16704f3"
+    },
+    {
+      "path": "fonts/NotoSansSC.woff2",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "credit": "Noto Project Authors / SIL Open Font License 1.1",
+      "purpose": "offline Chinese font (subset)",
+      "bytes": 7609976,
+      "sha256": "90b72d69dfc414994ea73d354ff8bc1ddf9c2df7edbd5429be61f39c8656688e"
+    }
+  ]
+}

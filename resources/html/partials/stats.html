@@ -1,0 +1,1 @@
+{{if stats.length}}<section class="panel"><div class="stats">{{each stats item}}<div class="stat">{{if item.iconFile}}<img class="stat-icon" src="{{pluResPath}}ui/icons/{{item.iconFile}}" alt="">{{/if}}<strong>{{item.value}}</strong><span>{{item.label}}</span></div>{{/each}}</div></section>{{/if}}

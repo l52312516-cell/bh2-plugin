@@ -1,6 +1,6 @@
 {
   "name": "bh2-plugin",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "云崽崩坏学园2账号、战绩和本地图鉴插件",
   "type": "module",
   "main": "index.js",
@@ -8,7 +8,8 @@
   "engines": { "node": ">=18.0.0" },
   "scripts": {
     "test": "node --test",
-    "package:server": "node scripts/package-release.mjs"
+    "package:server": "node scripts/package-release.mjs",
+    "render:previews": "node scripts/render-previews.mjs"
   },
   "optionalDependencies": {
     "sqlite3": "^5.1.7",

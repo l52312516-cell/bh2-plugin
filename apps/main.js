@@ -11,6 +11,7 @@ import {
 import { updateCatalogFromGithub } from "../lib/catalogUpdater.js"
 import {
   accountCard,
+  accountsCard,
   catalogCard,
   catalogListCard,
   helpModel,
@@ -146,18 +147,16 @@ export class Bh2Plugin extends BasePlugin {
     return this.withUid(explicitUid, async (uid, cookie, roles) => {
       const matched = explicitUid ? roles.filter(role => String(role.game_uid) === String(explicitUid)) : roles
       if (!matched.length) return this.e.reply("Cookie 中没有可用的崩坏学园2账号。")
-      const fields = matched.map(role => {
-        const suffix = [role.level ? `Lv.${role.level}` : "", role.region_name || role.region || ""].filter(Boolean).join(" · ")
-        return `${role.nickname || "未知"} (${role.game_uid})${suffix ? `  ${suffix}` : ""}`
-      }).join("\n")
-      return this.e.reply(`=== 崩坏学园2账号 ===\n${fields}`)
+      return replyCard(this.e, accountsCard(matched))
     })
   }
 
   async showLoginDays(explicitUid = "") {
-    return this.withUid(explicitUid, async (uid, cookie) => {
+    return this.withUid(explicitUid, async (uid, cookie, roles) => {
       const raw = await recordRequest("loginDays", uid, {}, cookie)
-      return replyCard(this.e, accountCard(normalizeAccount(raw, uid)))
+      const account = normalizeAccount(raw, uid)
+      const role = roles.find(item => String(item.game_uid) === String(uid)) || {}
+      return replyCard(this.e, accountCard({...account, nickname:role.nickname || account.nickname, level:role.level ?? account.level, region:role.region_name || role.region || ''}))
     })
   }
 
