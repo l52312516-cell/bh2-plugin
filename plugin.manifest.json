@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "name": "bh2-plugin",
-  "version": "0.6.1",
-  "generatedAt": "2026-09-27T04:33:04.102Z",
+  "version": "0.6.2",
+  "generatedAt": "2026-09-27T06:02:21.594Z",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "c1d758d83c8cd25a9562ce493c879566ce11ceecd67b4f542bddf95e84a787c2"
+      "sha256": "9c563f33dabebdba5d566dc9b937244d624960f6e0d68e4008e31d3e624b2dd7"
     },
     {
       "path": "LICENSE",
@@ -14,7 +14,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "08f23dc2a8088a9d877fe4bc763a0014e7313d99f8f0223275caaca89ab33308"
+      "sha256": "fd9dc322ff6eae06423087ebaeae0e52b933ed90013b24f6c8564971a47ba152"
     },
     {
       "path": "SOURCE-NOTICE.md",
@@ -34,11 +34,11 @@
     },
     {
       "path": "lib/api.js",
-      "sha256": "d8c15efc3375a75f851a115e10e04905c963aa771a0b891cb89b5e323c4ac481"
+      "sha256": "d46e156762d0ce1433fe0bb45d514a7ac117c9935e152f9317098ccc8ce628dc"
     },
     {
       "path": "lib/cardImage.js",
-      "sha256": "e3f1bdbadb89ee975c259f9472de4352e29075bd6bc6c25c9d7a90730935022e"
+      "sha256": "28a61b1d7701319d320e03af5d9a2788e408873ea63b2e98a5b7dbbd0be4fb6b"
     },
     {
       "path": "lib/catalog.js",
@@ -70,7 +70,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "7eb53df99fc2fa6a05a75b94cb712dd06f4b08d8cc2a894bd68f870e4c1d05ee"
+      "sha256": "96dc914a57012173bc56104562ece0df0195af9455c964f6d1faf9f94e87523b"
     },
     {
       "path": "resources/html/account.html",
@@ -118,7 +118,7 @@
     },
     {
       "path": "resources/html/showcase.html",
-      "sha256": "42df7f80504340850cd0170624f9fbf79c031245eaf6ee935240f5a6c9b66da1"
+      "sha256": "8328eae84df22cf0def166f127886184a105efce08b6df5ff5e965193bfd6086"
     },
     {
       "path": "resources/html/status.html",
