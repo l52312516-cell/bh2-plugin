@@ -1,6 +1,6 @@
 # bh2-plugin
 
-面向 TRSS-Yunzai / Yunzai 3.x 的崩坏学园2查询插件，提供账号战绩、展柜概览、本地图鉴、图片帮助和在线更新。v0.5.0 起所有主要回复统一为深蓝背景、半透明面板、金色标题和青色重点数字的长图卡片。
+面向 TRSS-Yunzai / Yunzai 3.x 的崩坏学园2查询插件，提供账号战绩、展柜概览、本地图鉴、图片帮助和在线更新。v0.6.0 起主要回复使用固定背景、方形游戏图标、5 列展柜和紧凑详情表，并对远程头像失败、渲染器缺失和空截图提供明确文字回退。
 
 ## 安装
 
@@ -77,10 +77,10 @@ node .\scripts\package-release.mjs
 
 也可以在 npm PowerShell 脚本未被系统策略拦截时运行 `npm run package:server`。输出文件为 `release/bh2-plugin-server.zip`，同时刷新 `plugin.manifest.json` 和 `release/SHA256SUMS.txt`。服务器包只包含程序、模板和 `resources/ui` 公共素材，不包含 `config/config.json`、`data/catalog.json` 或完整独立图鉴图片；图鉴请通过 `#BH2图鉴更新` 单独安装。
 
-生成视觉预览：
+生成视觉预览（默认使用本地独立图鉴资源；未安装时仍可生成帮助和状态卡）：
 
 ```powershell
 node .\scripts\render-previews.mjs
 ```
 
-预览输出到 `release/previews`，包括帮助、状态、账号、登录天数、展柜、图鉴列表、装备/角色详情、缺图和长文本样例。
+预览输出到 `release/previews/<插件版本>`，保留旧版本预览，包括帮助、状态、账号、登录天数、展柜、图鉴列表、装备/角色详情、缺图和长文本样例。

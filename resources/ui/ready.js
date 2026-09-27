@@ -5,5 +5,6 @@ window.BH2_READY = Promise.all([document.fonts.ready, ...Array.from(document.ima
   if (image.complete) return done(image.naturalWidth > 0)
   image.addEventListener('load', () => done(true), {once:true})
   image.addEventListener('error', () => done(false), {once:true})
-  timer = setTimeout(() => done(false), 8000)
+  // A remote avatar must never hold a Yunzai screenshot open for seconds.
+  timer = setTimeout(() => done(false), 2500)
 }))]).then(() => { document.documentElement.dataset.ready = 'true' })

@@ -1,5 +1,5 @@
 {
-  "snapshotDate": "2026-09-26",
+  "snapshotDate": "2026-09-27",
   "assets": [
     {
       "path": "backgrounds/help.jpg",
@@ -45,31 +45,31 @@
       "path": "icons/equipment.png",
       "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/index/equip/1/119.png",
       "credit": "miHoYo / 崩坏学园2 官网",
-      "purpose": "category icon",
-      "width": 52,
+      "purpose": "square category icon (top-weighted crop)",
+      "width": 144,
       "height": 144,
-      "bytes": 17192,
-      "sha256": "e711e8e6114945a0633dec44101d1a84ded23c82e2f347c1c2404dd09aec0e24"
+      "bytes": 38143,
+      "sha256": "637a4084e5f9eae620b7d0c2b65111773dce602c12114baf85cd5f09b0b9190b"
     },
     {
       "path": "icons/badge.png",
       "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/index/equip/1/121.png",
       "credit": "miHoYo / 崩坏学园2 官网",
-      "purpose": "category icon",
-      "width": 52,
+      "purpose": "square category icon (top-weighted crop)",
+      "width": 144,
       "height": 144,
-      "bytes": 16183,
-      "sha256": "1b2222fac54db263220abf21efe0ab28990f61e8d36f2d9f1211d85cfee8f087"
+      "bytes": 35897,
+      "sha256": "87d8fd400bf746fddb54980d2816f6d92d4b72820e340936cafaf9d6c105c47c"
     },
     {
       "path": "icons/pet.png",
       "source": "https://static-event.benghuai.com/new_mihoyo_homepage/images/index/enemy/1/6.png",
       "credit": "miHoYo / 崩坏学园2 官网",
-      "purpose": "category icon",
-      "width": 51,
+      "purpose": "square category icon (top-weighted crop)",
+      "width": 144,
       "height": 144,
-      "bytes": 14099,
-      "sha256": "f40c2a203cad38134266a98f811ea0849b17de43b7a4c8dd47acf6e8a16704f3"
+      "bytes": 30268,
+      "sha256": "98aeef2b55a754ec1c42d8ec3e53a696b27191643bfde40312580f6935a4bc5b"
     },
     {
       "path": "fonts/NotoSansSC.woff2",

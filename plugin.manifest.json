@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "name": "bh2-plugin",
-  "version": "0.5.0",
-  "generatedAt": "2026-09-27T00:56:27.866Z",
+  "version": "0.6.0",
+  "generatedAt": "2026-09-27T03:08:41.789Z",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "e405eba45efe4067f3b037a7920e110c4037cccf6aec42e0ba2376e3c34d2b84"
+      "sha256": "b0ffa5b223bcf7d63a8ad858d4d44c65f6713b23741df71aa8044cffdaebd0df"
     },
     {
       "path": "LICENSE",
@@ -14,15 +14,15 @@
     },
     {
       "path": "README.md",
-      "sha256": "826e3f831983632664e7f1f7985a0dc095b199624a4e2934293ae3dc854a6f72"
+      "sha256": "8b2e6a6c6c6f333b152209e94caadcb4e5c1d25181e04ba6c25297d8aa76bf57"
     },
     {
       "path": "SOURCE-NOTICE.md",
-      "sha256": "ef0df9c8dd489819b3bb9ae894c574271979bb3ec173c0774c40ae9daa370db7"
+      "sha256": "a8757530cddefb61c52f27adadba83b945fb75f71e1248ad282768d8daef0859"
     },
     {
       "path": "apps/main.js",
-      "sha256": "68cdba2cc0c614130f73f2c63d77e9721c5fd1f1cc1c1aa7b88188d04ab88281"
+      "sha256": "897c90bc8069251148e356118910683dd0c08b2cb6ffe35a410a51797edfb102"
     },
     {
       "path": "config.example.yaml",
@@ -38,11 +38,11 @@
     },
     {
       "path": "lib/cardImage.js",
-      "sha256": "254522b690632f285b0be77264db7c14872fd8842ce7e296e6d394c85f73a1b8"
+      "sha256": "e3f1bdbadb89ee975c259f9472de4352e29075bd6bc6c25c9d7a90730935022e"
     },
     {
       "path": "lib/catalog.js",
-      "sha256": "333763c7baba4764294ffaf3965fc08c111e3ab503734b584336425366f19021"
+      "sha256": "9828bfb4e644aca48c6d827d4bc25ff6097c1cefee5501934e6ba81309eb64b7"
     },
     {
       "path": "lib/catalogUpdater.js",
@@ -66,11 +66,11 @@
     },
     {
       "path": "lib/ui.js",
-      "sha256": "544c85e15a564981873ea36afe9899ac036410dbc24a6c38a28c8d52124c52f8"
+      "sha256": "f7394560da7b4a54746534b58cfae9d1763a276924a7b5f9f8ea68e0ec586441"
     },
     {
       "path": "package.json",
-      "sha256": "84917e77538382a0ff61982c7e4b552a8d237d4cd9f1ff17fbe6b2abd2d66b89"
+      "sha256": "7271d9ff68caaf6f7268d814644268bc7f67b1d0b7029ba031bbfd7cad620adb"
     },
     {
       "path": "resources/html/account.html",
@@ -126,7 +126,7 @@
     },
     {
       "path": "resources/ui/assets.json",
-      "sha256": "8f5ce9055c868c88f6ca8bbaccf0fd5f581d28b0b4ceeed6e09d8a9bce463ae6"
+      "sha256": "996fa1fcd4cbae62992ffd43446bc4cefcbd3b558587c6ace518ab883035a3ae"
     },
     {
       "path": "resources/ui/backgrounds/catalog.jpg",
@@ -154,7 +154,7 @@
     },
     {
       "path": "resources/ui/icons/badge.png",
-      "sha256": "1b2222fac54db263220abf21efe0ab28990f61e8d36f2d9f1211d85cfee8f087"
+      "sha256": "87d8fd400bf746fddb54980d2816f6d92d4b72820e340936cafaf9d6c105c47c"
     },
     {
       "path": "resources/ui/icons/book.svg",
@@ -166,7 +166,7 @@
     },
     {
       "path": "resources/ui/icons/equipment.png",
-      "sha256": "e711e8e6114945a0633dec44101d1a84ded23c82e2f347c1c2404dd09aec0e24"
+      "sha256": "637a4084e5f9eae620b7d0c2b65111773dce602c12114baf85cd5f09b0b9190b"
     },
     {
       "path": "resources/ui/icons/image.svg",
@@ -182,7 +182,7 @@
     },
     {
       "path": "resources/ui/icons/pet.png",
-      "sha256": "f40c2a203cad38134266a98f811ea0849b17de43b7a4c8dd47acf6e8a16704f3"
+      "sha256": "98aeef2b55a754ec1c42d8ec3e53a696b27191643bfde40312580f6935a4bc5b"
     },
     {
       "path": "resources/ui/icons/settings.svg",
@@ -198,11 +198,11 @@
     },
     {
       "path": "resources/ui/ready.js",
-      "sha256": "f4012b53140e2ae921553ef211d07a43171a31ab5d7b30dbe8a54a59c6dfa6ad"
+      "sha256": "6f72c9f6271f2eef93c00f3746d0d8f9dd9eda0909414396b554bbb6580b8724"
     },
     {
       "path": "resources/ui/theme.css",
-      "sha256": "82bf2d020d65d901c2042960dad1a6845cb3659fac19e13fd7214dc5f61b56ea"
+      "sha256": "f16074747e16881f266520737151a6090afd256738da6d1a0dc52418f4f198f9"
     }
   ]
 }

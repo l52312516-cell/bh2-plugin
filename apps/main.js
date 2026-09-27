@@ -188,10 +188,11 @@ export class Bh2Plugin extends BasePlugin {
   }
 
   async showCatalog(keyword = "", type = "", page = 1) {
-    if (!getAllEntries().length) return this.e.reply("本地图鉴尚未安装，请让 Bot 主人发送 #BH2图鉴更新。")
-    const result = catalogPage({ keyword, type, page })
+    const entries = getAllEntries()
+    if (!entries.length) return this.e.reply("本地图鉴尚未安装，请让 Bot 主人发送 #BH2图鉴更新。")
+    const result = catalogPage({ keyword, type, page, entries })
     if (result.exact) return replyCard(this.e, catalogCard(result.exact))
-    return replyCard(this.e, catalogListCard({ ...result, keyword, type }))
+    return replyCard(this.e, catalogListCard({ ...result, allEntries: entries, keyword, type }))
   }
 
   async showDetail(query) {
@@ -200,7 +201,7 @@ export class Bh2Plugin extends BasePlugin {
     if (exact) return replyCard(this.e, catalogCard(exact))
     const matches = searchCatalog(query)
     if (!matches.length) return this.e.reply(`未找到图鉴条目：${query}`)
-    return replyCard(this.e, catalogListCard({ items: matches.slice(0, 12), keyword: query, total: matches.length, page: 1, pages: Math.max(1, Math.ceil(matches.length / 12)) }))
+    return replyCard(this.e, catalogListCard({ items: matches.slice(0, 12), allEntries: getAllEntries(), keyword: query, total: matches.length, page: 1, pages: Math.max(1, Math.ceil(matches.length / 12)) }))
   }
 
   async showStatus() {
